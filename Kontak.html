@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisata Tiongkok</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Link to custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">China</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kegiatan</a>
+          </li>
+          <li class="nav-item">
+            <a class="kontak.html" href="kontak.html">Kontak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+            <li class="nav-item">
+                <a class="nav-item" href="Galeri.html">Galeri</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <div class="container mt-5">
+    <h1 class="text-center">Kontak Kami</h1>
+    <div class="row mt-4">
+      <!-- Formulir Pendaftaran -->
+      <div class="col-md-6">
+        <h3>Formulir Pendaftaran</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Alamat</label>
+            <input type="text" class="form-control" id="address">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">No Telepon</label>
+            <input type="tel" class="form-control" id="phone">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Jenis Kelamin</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="male">
+              <label class="form-check-label" for="male">Laki-laki</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="female">
+              <label class="form-check-label" for="female">Perempuan</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="activity" class="form-label">Jenis Kegiatan</label>
+            <select class="form-select" id="activity">
+              <option selected>Pilih Kegiatan</option>
+              <option value="1">Aktivitas 1</option>
+              <option value="2">Aktivitas 2</option>
+              <option value="3">Aktivitas 3</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Destinasi yang Ingin Dikunjungi</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="beach">
+              <label class="form-check-label" for="beach">Pantai</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="mountain">
+              <label class="form-check-label" for="mountain">Gunung</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="forest">
+              <label class="form-check-label" for="forest">Hutan</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+      </div>
+      <!-- Masukkan Saran & Kritik -->
+      <div class="col-md-6">
+        <h3>Masukkan Saran & Kritik</h3>
+        <form>
+          <div class="mb-3">
+            <label for="feedbackName" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="feedbackName">
+          </div>
+          <div class="mb-3">
+            <label for="feedbackEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="feedbackEmail">
+          </div>
+          <div class="mb-3">
+            <label for="feedbackMessage" class="form-label">Saran dan Kritik</label>
+            <textarea class="form-control" id="feedbackMessage" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+      </div>
+    </div>
+    <!-- Lokasi Kantor Kami -->
+    <div class="mt-5">
+      <h3 class="text-center">Lokasi Kantor Kami</h3>
+      <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1701484695745!2d-122.42334978468184!3d37.757679679761204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e4dba42b38f%3A0x4e6d8be00d5c5b37!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sid!4v1611093325256!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center mt-4">
+    <p>© 2024 Rafli ahmad</p>
+    <p>Email: rafli2006ahmad@gmail.com</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="container mt-5">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your-video-link" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="container text-center mt-5">
+    <h2>Tim Kami</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="your-image-url" class="rounded-circle" alt="Dian Sastro Wardoyo" width="150">
+        <h5>Dian Sastro Wardoyo</h5>
+        <p>CMO</p>
+      </div>
+      <div class="col-md-4">
+        <img src="your-image-url" class="rounded-circle" alt="Joe Taslim" width="150">
+        <h5>Joe Taslim</h5>
+        <p>COO</p>
+      </div>
+      <div class="col-md-4">
+        <img src="your-image-url" class="rounded-circle" alt="Prilly Latuconsina" width="150">
+        <h5>Prilly Latuconsina</h5>
+        <p>HR Manager</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Company History Section -->
+  <div class="container mt-5">
+    <h2 class="text-center">Sejarah Perusahaan Kami</h2>
+    <div class="text-center mb-4">
+      <img src="your-logo-url" alt="Company Logo" width="150">
+    </div>
+    <p>Didirikan pada tahun 2010, Rekreasi Seru telah berkembang menjadi salah satu perusahaan pariwisata terkemuka di Indonesia...</p>
+  </div>
+
+  <!-- Another Video Section -->
+  <div class="container mt-5">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your-video-link" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="container text-center mt-5 mb-4">
+    <h5>REKREASI SERU</h5>
+    <p>Kami menyediakan berbagai pilihan kegiatan rekreasi untuk keluarga dan teman-teman. Nikmati liburan tak terlupakan bersama kami!</p>
+    <p><strong>Hubungi Kami</strong></p>
+    <p>Email: info@rekreasi.com | Telepon: +62 812 3456 7890</p>
+    <p>&copy; 2024 Rekreasi Seru. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>

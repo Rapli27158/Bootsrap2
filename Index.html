@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisata Tiongkok</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Link to custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+   <style>
+        .background-image {
+            background-image: url('cina3.jpg'); /* Ganti dengan link atau lokasi foto Anda */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Atur tinggi sesuai kebutuhan */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Warna teks agar terlihat jelas di atas background */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bayangan teks untuk kontras */
+        }
+    </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">China</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#text-center">Kegiatan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.html">Kontak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aboutus.html">About us</a>
+            <li class="nav-item">
+                <a class="nav-link" href="Galeri.html">Galeri</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Content Section -->
+<div class="background-image">
+        <div class="text-judul">
+            <p>WELCOME TO CHINA</p>
+            <h1>欢迎来到中国</h1>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        <style>
+        .card img {
+            max-height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .new-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .pagination {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+                <li class="breadcrumb-item"><a href="#">Kegiatan</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Populer</li>
+            </ol>
+        </nav>
+
+        <!-- Promo -->
+        <div class="alert alert-success text-center" role="alert">
+            Promo Spesial! Dapatkan diskon 20% untuk semua paket rekreasi bulan ini. <a href="#" class="alert-link">Pesan Sekarang!</a>
+        </div>
+
+        <!-- Kegiatan Rekreasi Populer -->
+        <h2 id="text-center">Kegiatan Rekreasi Populer <span class="badge badge-primary new-badge">New</span></h2>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="lembah.jpg" class="card-img-top" alt="Pantai Indah" data-toggle="modal" data-target="#imageModal" data-slide-to="0" style="width: 300;">
+                    <div class="card-body">
+                        <h5 class="card-title">Naik Perahu di lembah Jiuzhai</h5>
+                        <p class="card-text">Nikmati keindahan Lembah JIuzhai dengan menaiki Perahu.</p>
+                        <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="potala.jpg" class="card-img-top" alt="Camping Seru" data-toggle="modal" data-target="#imageModal" data-slide-to="1" style="height: 1000;">
+                    <div class="card-body">
+                        <h5 class="card-title">Kunjungan ke Potala Place</h5>
+                        <p class="card-text">Berkeliling di istana Potala Place,Istana ini berada di tempat yang dingin</p>
+                        <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="jingsan.jpg" class="card-img-top" alt="Trekking Gunung" data-toggle="modal" data-target="#imageModal" data-slide-to="2">
+                    <div class="card-body">
+                        <h5 class="card-title">Berjalan di JingShan Park</h5>
+                        <p class="card-text">Berjalan-jalan di Jingshan Park yang megah dan indah sekali</p>
+                        <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination mt-4">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="lembah.jpg" class="d-block w-100" alt="Lembah Indah">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="potala.jpg" class="d-block w-100" alt="Potala Place">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="jingsan.jpg" class="d-block w-100" alt="Jingshan Park">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
